@@ -186,7 +186,7 @@ const glue = {
       tableName: settings("db_events_table_name"),
       indexes: postgresJdbc("createEventIndexes")
     }),
-    postgresJdbc("syncTableSchema", settings("db_events_table_name"))
+    // postgresJdbc("syncTableSchema", settings("db_events_table_name"))
   ],
   // currently need to do this so ship:update doesn't fail, but ensure hook will see if we really need to reinit
   shipUpdate: {}
