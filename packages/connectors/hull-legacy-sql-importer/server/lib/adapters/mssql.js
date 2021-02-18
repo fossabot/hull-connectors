@@ -48,7 +48,10 @@ export function parseConnectionConfig(settings) {
     try {
       const customOptions = JSON.parse(settings.db_options);
       if (customOptions) {
-        opts = _.merge(opts, customOptions);
+        opts = {
+          ...opts,
+          ...customOptions
+        };
       }
     } catch (parseError) {
       console.error("config.error", parseError);
