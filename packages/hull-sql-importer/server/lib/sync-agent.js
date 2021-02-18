@@ -372,9 +372,11 @@ export default class SyncAgent {
     return this.createClient()
       .then(client => {
         openClient = client;
+        console.log("running query...");
         return this.adapter.in.runQuery(client, wrappedQuery, options);
       })
       .then(result => {
+        console.log("closing client...");
         this.closeClient(openClient);
 
         const { errors } = this.adapter.in.validateResult(

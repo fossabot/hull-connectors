@@ -173,6 +173,7 @@ export function runQuery(client, query, options) {
     conn.on("connect", err => {
       // eslint-disable-line consistent-return
       if (err) {
+        console.log(`mssql error: ${err.message}`)
         if (err.message && err.message.includes("ECONNRESET")) {
           // This is an error caused by the Azure Load Balancer that is not really an error,
           // we can recover from it pretty easily by simply reconnecting.

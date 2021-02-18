@@ -106,6 +106,10 @@ class InstrumentationAgent {
       });
 
       global.process.on("unhandledRejection", (reason, promise) => {
+        console.log(
+          "unhandled rejection - this.exitOnError: ",
+          this.exitOnError
+        );
         const context = promise.domain && promise.domain.sentryContext;
         this.raven.captureException(reason, context || {}, () => {
           console.error("connector.error", { reason });
