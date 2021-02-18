@@ -36,5 +36,5 @@ fi
 echo "Starting connector $PATH_TO_CONNECTOR with ${WEB_CONCURRENCY} instances on PORT $PORT"
 echo "Node args: ${NODE_ARGS}"
 
-PATH_TO_CONNECTOR=$PATH_TO_CONNECTOR node $NODE_ARGS dist/start.js
+PATH_TO_CONNECTOR=$PATH_TO_CONNECTOR node dist/start.js $NODE_ARGS
 
