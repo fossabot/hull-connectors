@@ -602,6 +602,8 @@ export default class HullConnector {
         "Worker is started but no jobs hash is declared in Handlers"
       );
     }
+    console.log("starting worker");
+    console.log("exitOnError: ", this.instrumentation.exitOnError);
     this._worker = new this.Worker({
       instrumentation: this.instrumentation,
       queue: this.queue,
