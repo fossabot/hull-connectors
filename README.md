@@ -1,4 +1,6 @@
 # Hull Connectors
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhull%2Fhull-connectors.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhull%2Fhull-connectors?ref=badge_shield)
+
 
 This is a monorepository containing all official Hull connectors
 and supporting libraries.
@@ -212,3 +214,7 @@ To make this easier, call `yarn ngrok xxx`. For instance, to expose the `hull-ty
 ## Changes
 
 Monorepository has one global version and changelog.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhull%2Fhull-connectors.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhull%2Fhull-connectors?ref=badge_large)
